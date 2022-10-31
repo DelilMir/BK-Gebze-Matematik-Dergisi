@@ -4,77 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Matematik Dergisi</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css\style.css"> -->
+    <style>
+        body{background:rgb(60, 60, 60)}
+        .musics{display: flex;gap:0 20%;}
+        .music{display: inline-block;text-align: center;}
+        .music > img{padding:0 20px;box-sizing: border-box;height: 400px;}
+        .av{width:200px;}
+        .bv{width:200px;}
+        .cv{width:250px}
+        audio{display: block;}
+    </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <img src="bklogo.png" alt="logo">
-            </div>
-            <div class="links">
-                <a href="İsimsiz video ‐ Clipchamp ile yapıldı (2).mp4">
-                    Emeği Geçenler
-                </a>
-            </div>
-        </nav>
-        <div class="row">
-            <div class="col-1">
-                <h1>Matematik <br> 
-                    Dergisi</h1>
-                <p>Dergimizin, 27 Ekim 2022 Günü İlk Sayısı Oluşturuldu. Yoğun Bir Programın İçerisinde Özenle Hazırlanmış Dergimizi Okuyacaklara Şimdiden İyi Okumalar. </p>
-                
-                <div class="buttons">
-                    <div class="button-1">
-                       <a target="_blank" href="https://www.instagram.com/bahcesehir_fentekgebze/">
-                        <button>
-                            İnstagram
-                        </button>
-                       </a>
-                       
-                    </div>
-                    <div class="button-2">
-                        <a target="_blank" href="https://twitter.com/BFentek">
-                            <button>
-                                Twitter
-                            </button>
-                        </a>
-                
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="feature-img">
-                    <a target="_blank" href="29 Ekim Cumhuriyet Bayramı.pdf">
-                        <img src="ilkdergikapak.jfif" alt="Dergi">
-                    </a>
-                </div>
-                <div class="small">
-                    <div class="small-img">
-                        <a href="Üzgünüz Şu Anda Bu Sayı Mevcut Değil (.png">
-                            <img src="2.png" alt="dergi-iki">
-                        </a>
-                    </div>
-                    <div class="small-img">
-                        <a href="Üzgünüz Şu Anda Bu Sayı Mevcut Değil (.png">
-                            <img src="3.png" alt="dergi-üç">
-                        </a>
-                    </div>
-                    <div class="small-img">
-                        <a href="Üzgünüz Şu Anda Bu Sayı Mevcut Değil (.png">
-                            <img src="4.png" alt="dergi-dört">
-                        </a>
-                    </div>
-                    <div class="small-img">
-                        <a href="Üzgünüz Şu Anda Bu Sayı Mevcut Değil (.png">
-                            <img src="5.png" alt="dergi-beş">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="musics"> 
+    <div class="music">
+        <img src="sb.png" class="av">
+        <audio controls audio>
+            <source src="sb.mpeg" >
+        </audio>
     </div>
+    <div class="music">
+        <img src="p.png" class="bv">
+        <audio controls audio>
+            <source src="p.mpeg" >
+        </audio>
+    </div>
+    <div class="music">
+        <img src="f.png" class="cv">
+        <audio controls audio>
+            <source src="f.mpeg" >
+        </audio>
+    </div>
+</div>
+
+    <div style="display:block;text-align: center;margin-top: 400px;">
+        <img src="st.png">
+    </div>
+    
 </body>
 </html>
