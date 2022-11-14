@@ -93,6 +93,7 @@ nav .links:hover {
 }
 
 .row{
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
     display: flex;
@@ -106,6 +107,7 @@ nav .links:hover {
     justify-content: center;
     flex-direction: column;
     color: black;
+    flex-grow: 1;
 }
 
 .row .col-1 {
