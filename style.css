@@ -24,13 +24,60 @@
 
 nav{
     display: flex;
-    background-color: red;
+    background-color: rgb(210, 20, 20);
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+nav .buttons{
+    position: relative;
+    right: 5%;
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav .button-1 button{
+    border-radius: 10%;
+    display: inline-block;
+    width: fit-content;
+    padding: 18px;
+    background: purple;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav  .button-1 button:hover {
+    background: rgb(255, 252, 80);
+    color: rgb(16, 0, 31);
+}
+
+
+nav .button-2 button{
+    border-radius: 10%;
+    display: inline-block;
+    width: fit-content;
+    padding: 18px;
+    background: rgb(22, 112, 197);
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav .button-2 button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(2, 94, 231);
 }
 
 nav .links {
@@ -63,83 +110,78 @@ nav .links:hover {
 
 .row .col-1 {
     padding-left: 8%;
+    background-color: rgb(109, 146, 179)
 }
 
-.row .col-1 h1{
-    font-size: 40px;
-    line-height: 125%;
-    margin-bottom: 5px;
-    color: white;
+.row .col-1 .yazi{
+    position: relative;
+    left: 30%;
+    top: 1%;
+    color: rgb(43, 73, 99);
 }
 
-.row .col-1 p{
-    padding-right: 10px;
-    line-height: 1.4;
-    color: white;
+.row .col-1 .yarismahead{
+    color: rgb(43, 73, 99);
+    position: relative; 
 }
 
-.row .col-1 .buttons{
-    display: flex;
-    column-gap: 10px;
-    flex-wrap: wrap;
-}
-
-.row .col-1 .button-1 button{
+.fotos button{
     border-radius: 10%;
-    display: inline-block;
+    display:inline-block;
     width: fit-content;
-    padding: 18px;
-    background: purple;
+    padding: 1%;
+    background: rgb(43, 73, 99);
     border: none;
-    color: white;
+    color: rgb(109, 146, 179);
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 1%;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 
-.row .col-1 .button-1 button:hover {
-    background: rgb(209, 207, 57);
-    color: rgb(16, 0, 31);
-    transform: translateY(-5px);
+.fotos a :hover{
+    transform: translateX(10px);
+    background: wheat;
 }
-
-
-.row .col-1 .button-2 button{
-    border-radius: 10%;
-    display: inline-block;
-    width: fit-content;
-    padding: 18px;
-    background: rgb(22, 112, 197);
-    border: none;
-    color: white;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-
-.row .col-1 .button-2 button:hover {
-    background: rgb(255, 255, 255);
-    color: rgb(2, 94, 231);
-    transform: translateY(-5px);
-}
-
-
 
 .col-2{
-    background-color: rgb(60, 136, 235);
+    background-color: rgb(43, 100, 175);
     position: relative;
 }
 
+.col-2 .head {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 13%;
+    left: 45%;
+}
+
+.col-2 .head h2{
+    font-family: 'Arial Narrow Bold';
+}
+
+.col-2 .onecikan{
+    color: white;
+    position: relative;
+    left: 20%;
+    top: 23%;
+    font-size: 20px;
+}
+
+.col-2 .onecikan h3{
+    font-family: 'sans-serif';
+}
+
 .col-2 .feature-img{
+    position: relative;
+    top: 10%;
     width: 100%;
     text-align: center;
 }
 
 .col-2 .feature-img img{
-    size: 5%;
-    width: 15%;
+    width: 13%;
     transform: translate(20px, 10px);
     transition: 0.5s ease;
     color: white;
@@ -157,6 +199,8 @@ nav .links:hover {
 }
 
 .small{
+    position: relative;
+    top: 15%;
     display: flex;
     width: 80%;
     margin: 30px auto 0;
